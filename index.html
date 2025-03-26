@@ -17,12 +17,13 @@
       color: #333;
     }
 
-    header {
-      background: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
+header {
+  background: url('beckmap1.jpg') center center / cover no-repeat;
+  padding: 3rem 1rem;
+  text-align: center;
+  color: white;
+  position: relative;
+}
 
     header h1 {
       font-size: 2.2rem;
@@ -90,22 +91,24 @@
   </style>
 </head>
 <body>
-  <header>
-    <div style="text-align: center; padding: 2rem 1rem;">
-      <img src="myphoto.jpg" alt="My Photo" style="
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        object-position: 50% 30%;
-        border-radius: 50%;
-        margin-bottom: 1rem;
-      " />
-      <div>
-        <h1 style="margin-bottom: 0.5rem;">Logan Spencer, Ph.D. Candidate</h1>
-        <p>Anderson School of Management, UCLA</p>
-      </div>
+<header>
+  <div style="background-color: rgba(0, 0, 0, 0.5); padding: 2rem 1rem; border-radius: 10px;">
+    <img src="myphoto.jpg" alt="My Photo" style="
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      object-position: 50% 25%;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 3px solid white;
+    " />
+    <div>
+      <h1 style="margin-bottom: 0.5rem; color: white;">Logan Spencer, Ph.D. Candidate</h1>
+      <p style="color: #ddd;">Anderson School of Management, UCLA</p>
     </div>
-  </header>
+  </div>
+</header>
+
 
   <nav>
     <a href="#about">About Me</a>
