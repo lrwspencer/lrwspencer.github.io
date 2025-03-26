@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <title>Logan Spencer</title>
   <style>
-    /* Basic Reset */
     * {
       margin: 0;
       padding: 0;
@@ -16,7 +15,6 @@
       line-height: 1.6;
       background: #f8f9fa;
       color: #333;
-      margin: 0;
     }
 
     header {
@@ -36,7 +34,6 @@
       color: #666;
     }
 
-    /* Navigation Bar */
     nav {
       background: #eee;
       padding: 0.5rem;
@@ -55,7 +52,6 @@
       text-decoration: underline;
     }
 
-    /* Page Sections */
     section {
       max-width: 800px;
       margin: 2rem auto;
@@ -71,12 +67,11 @@
       padding-bottom: 0.5rem;
     }
 
-    section p {
+    section p, section ul {
       margin-bottom: 1rem;
       line-height: 1.6;
     }
 
-    /* Footer */
     footer {
       text-align: center;
       font-size: 0.9rem;
@@ -87,30 +82,24 @@
     }
   </style>
 </head>
-
 <body>
-  <!-- Header Section -->
-<header>
-  <div style="text-align: center; padding: 2rem 1rem;">
-    <!-- Your circular photo, centered -->
-    <img src="myphoto.jpg" alt="My Photo" style="
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      object-position: 50% 25%;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-    " />
-
-    <!-- Your name/title -->
-    <div>
-      <h1 style="margin-bottom: 0.5rem;">Logan Spencer, Ph.D. Candidate</h1>
-      <p>Anderson School of Management, UCLA</p>
+  <header>
+    <div style="text-align: center; padding: 2rem 1rem;">
+      <img src="myphoto.jpg" alt="My Photo" style="
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: 50% 33%;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      " />
+      <div>
+        <h1 style="margin-bottom: 0.5rem;">Logan Spencer, Ph.D. Candidate</h1>
+        <p>Anderson School of Management, UCLA</p>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-  <!-- Navigation Section -->
   <nav>
     <a href="#about">About Me</a>
     <a href="#research">Research</a>
@@ -118,52 +107,52 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
-    <p>
-      I am a 6th year PhD candidate in Economics at UCLA Anderson School of Management.
-      My research focuses on Applied Microeconomics, Cultural Economics, and Economic History. I am particularly interested in the economic impacts of long-run changes in culture.
-    </p>
+    <p>I am a 6th year PhD candidate in Economics at UCLA Anderson School of Management. My research focuses on Applied Microeconomics, Cultural Economics, and Economic History. I am particularly interested in the economic impacts of long-run changes in culture.</p>
   </section>
 
-  <!-- Research Section -->
   <section id="research">
     <h2>Research</h2>
-    <p>
-      My work aims to address questions about the economic impacts of cultural change using archival and primary historical data.
-    </p>
+    <p>My work aims to address questions about the economic impacts of cultural change using archival and primary historical data.</p>
+    <h3>Job Market Paper</h3>
+    <p><strong>Mind the Map: How the 1933 Tube Map Shaped London</strong><br />
+    This paper investigates the role of perceived proximity in shaping urban development, using the 1933 London Tube Map as a natural experiment. I show that areas appearing closer to central London on the map experienced more housing construction, higher prices, and greater mention in newspapers after 1933.</p>
+
+    <h3>Papers in Progress</h3>
+    <ul>
+      <li><strong>Worshiping Alone: Religious Networks and Social Connections</strong><br />
+      Examines how declining religious affiliation affected social connectivity using Chetty et al.'s economic connectedness data and an IV strategy based on blue law repeals.</li>
+      <li><strong>Moral Panics and Electoral Backlash</strong></li>
+    </ul>
   </section>
 
-  <!-- Teaching Section -->
   <section id="teaching">
-    <h2>Teaching</h2>
-    <p>
-      <ul>
-        <li>Course 1 (Semester, Year)</li>
-        <li>Course 2 (Semester, Year)</li>
-        <li>Course 3 (Semester, Year)</li>
-      </ul>
-    </p>
+    <h2>Teaching Experience</h2>
+    <ul>
+      <li>MGMT 405 Economic Analysis for Managers, Head TA (6 Sections), 2024</li>
+      <li>MGMT 458 Global Immersion, TA for Nico Voigtlaender, 2024</li>
+      <li>MGMT 180-1 Entertainment Business Models, TA for Sanjay Sood, 2024</li>
+      <li>MGMT 180-2 Entertainment Marketing, TA for Sanjay Sood, 2024</li>
+      <li>MGMT 405 Economic Analysis for Managers, TA for Nico Voigtlaender, 2021-2023</li>
+      <li>MGMT 298 Global Trends, TA for Romain Wacziarg, 2023</li>
+      <li>MGMTSA 412 Business Analytics Capstone, TA for Robert Zeithammer, 2023</li>
+      <li>MGMTEX 421 International Business Residency, TA for Nico Voigtlaender, 2022-2024</li>
+    </ul>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Feel free to reach me at <strong>logan.spencer.phd@anderson.ucla.edu</strong>.</p>
-    <p>
-      Office: Entrepreneur's Hall, Anderson School of Management, UCLA<br/>
-      Office hours: By appointment
-    </p>
+    <p>Email: <strong>logan.spencer.phd@anderson.ucla.edu</strong></p>
+    <p>Office: Entrepreneur's Hall, Anderson School of Management, UCLA<br />
+    Office hours: By appointment</p>
   </section>
 
-  <!-- Footer -->
   <footer>
     &copy; <span id="current-year"></span> Logan Spencer. All rights reserved.
   </footer>
 
   <script>
-    // Small JS snippet to auto-update the year in the footer
     document.getElementById('current-year').textContent = new Date().getFullYear();
   </script>
 </body>
